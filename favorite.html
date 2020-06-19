@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favorite git command |Tolulope_Afolabi</title>
+</head>
+<body>
+    <header>
+        <h1>My Favorite Git command</h1>
+        <h3>git push</h3>
+    </header>
+    <hr>
+    <main>
+        <h2>What does it do?</h2>
+        <section>
+            <article>
+                The <strong><a href="https://git-scm.com/docs/git-push" title="git push documentation" target="_blank">git push</a></strong> command  is used to upload local repository content to a remote repository. <strong>Pushing</strong> is how you transfer commits from your local repository to a remote repo. It's the counterpart to <strong>git</strong> fetch , but whereas fetching imports commits to local branches, <strong>pushing</strong> <em>exports</em> commits to remote branches (i.e Send changes to the master branch of your remote repository).
+
+                <p>The <em>push</em> here is for <em>pushing</em> your changes which requires a branch to push to call it <strong>origin</strong> and then specify the branch name master (the default branch that always exists on any repository.)</p>
+            </article>
+        </section>
+        <h2>Flags that can be used with "git push"</h2>
+        <section>
+            <article>
+                <p><strong>-u</strong> (Upstream)</p>
+                Since the Purpose of <strong><a href="https://git-scm.com/docs/git-push" title="git push documentation" target="_blank">git push</a></strong> command is to update our remote repo, The <strong>-u</strong> flag is used to set origin as the upstream remote in your git config. As you push a branch successfully or update it, it adds upstream reference. As you push local branch with <em>git push -u</em> option, that local branch is linked with the remote branch automatically.
+                <p>"Upstream" would refer to the main repo that other people will be pulling from, e.g. your GitHub repo. The -u option automatically sets that upstream for you, linking your repo to a central one. That way, in the future, Git "knows" where you want to push to and where you want to pull from, so you can use git pull or git push without arguments. A little bit down, <a href="https://git-scm.com/docs/git-push" title="git push documentation" target="_blank">this article</a> explains and demonstrates this concept.</p>
+                <p><strong>-f</strong> (Force)</p>
+                <strong>git push -f</strong> will <em>force</em> push all of the tracking branches to remote. If a developer has a few outdated branches, that are tracking remotes, and he executes that command, all of the tracking branches will have been rolled back to his outdated copies, which causes loss of valuable work.
+                <p>This can be done accidentally, or by someone not very experienced with git like myself (haha.). It really seems like git should ask for a confirmation just so we do not use this unintended (like adding an extra check in the <em>-f</em> behavior say "Are you sure you want to delete the file?" and then "Are you really sure?").</p>
+            </article>
+        </section>
+    </main>
+</body>
+<hr>
+<footer>
+    <p><em>no rights reserved || Tolulope Afolabi&copy;2020</em></p>
+</footer>
+</html>
